@@ -1,13 +1,11 @@
 {
-  "name": "wechat-app-mall",
-  "version": "8.3.0",
+  "name": "nativeApplet-mall-master",
+  "version": "1.1.0",
   "description": "微信小程序商城，微信小程序微店",
   "main": "app.js",
   "dependencies": {
-    "@vant/weapp": "^1.5.0",
-    "apifm-wxapi": "^3.16.1",
-    "wxa-plugin-canvas": "^1.1.12",
-    "wxbarcode": "^1.0.2"
+    "@vant/weapp": "^1.5.2",
+    "apifm-wxapi": "^3.18.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -22,10 +20,6 @@
     "小店",
     "微商城"
   ],
-  "author": "gooking",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EastWorld/wechat-app-mall/issues"
-  },
-  "homepage": "https://github.com/EastWorld/wechat-app-mall#readme"
+  "author": "Eva",
+  "license": "ISC"
 }
