@@ -77,3 +77,7 @@ https://admin.it120.cc/#/dashboard
 到微信小程序商户后台-版本管理，在开发版本中找到你刚才提交的版本，点击提交审核。
 **发布上线**
 审核通过后，就可以将审核通过的版本提交上线，这样在微信中就可以搜索到该小程序了。
+
+项目参考：
+参考项目：https://github.com/EastWorld/wechat-app-mall
+“天使童装8.X版本”入门教程：https://www.it120.cc/help/ikfe2k.html
