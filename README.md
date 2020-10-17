@@ -46,7 +46,9 @@ https://github.com/gooking/apifm-wxapi
 *注意：这两个值如果没有正确配置，在项目中使用的时候将无法连接到你的后台。*
 
 **下载项目**
+
 **下载微信开发者工具**
+
 https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
 **在微信开发者工具中运行项目**
@@ -79,5 +81,7 @@ https://admin.it120.cc/#/dashboard
 审核通过后，就可以将审核通过的版本提交上线，这样在微信中就可以搜索到该小程序了。
 
 项目参考：
+
 参考项目：https://github.com/EastWorld/wechat-app-mall
+
 “天使童装8.X版本”入门教程：https://www.it120.cc/help/ikfe2k.html
