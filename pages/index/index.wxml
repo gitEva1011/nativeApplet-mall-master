@@ -1,2 +1,36 @@
-<!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<van-search value="{{ searchValue }}" placeholder="搜索当当商品" bind:search="onSearch" />
+<swiper class="wp93 mauto" indicator-dots="true"
+  autoplay="true" interval="5000" duration="500">
+  <block wx:for="{{banners}}" wx:key="id">
+    <swiper-item>
+      <image class="vw100" bindtap="tapBanner" data-url="{{item.linkUrl}}" src="{{item.picUrl}}" />
+    </swiper-item>
+  </block>
+</swiper>
+<van-grid clickable column-num="5" border="{{false}}">
+  <block wx:for="{{goodsCategory}}" wx:key="id">
+    <van-grid-item
+      icon="{{item.icon}}"
+      link-type="reLaunch"
+      url="/pages/dashboard/index"
+      text="{{item.name}}"
+    />
+  </block>
+</van-grid>
+<van-divider contentPosition="center">商品列表</van-divider>
+<van-grid class="theme_background" column-num="2" border="{{ false }}">
+  <block wx:for="{{goodsList}}">
+    <van-grid-item class="theme_background" use-slot>
+      <view>
+        <image
+        class="w339 h339"
+          src="{{item.pic}}"
+        />
+        <view class="tl f24 fes mt30 ml20">{{item.characteristic}}</view>
+        <view class="tl f24 theme_red mt20 ml20">{{item.minPrice}}</view>
+      </view> 
+    </van-grid-item>
+  </block>
+</van-grid>
+
+

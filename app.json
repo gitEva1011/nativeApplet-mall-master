@@ -31,7 +31,7 @@
     ]
   },
   "usingComponents": {
-    
+    "van-search": "@vant/weapp/search/index"
   },
   "sitemapLocation": "sitemap.json"
 }
