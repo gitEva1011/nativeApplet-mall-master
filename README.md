@@ -46,6 +46,8 @@ https://github.com/gooking/apifm-wxapi
 *注意：这两个值如果没有正确配置，在项目中使用的时候将无法连接到你的后台。*
 
 **下载项目**
+源码下载：https://github.com/gitEva1011/nativeApplet-mall-master
+
 **下载微信开发者工具**
 https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 
@@ -63,14 +65,13 @@ https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 **subDomain值获取方式**
 https://admin.it120.cc/#/dashboard
 去到后台-首页，复制自己的专属域名
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201017190415581.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ0NDU1MTc=,size_16,color_FFFFFF,t_70#pic_center)
 
 
-运行效果
-
-## api工厂后台配置教程
 
 ## 上线小程序
+
 **上传代码到微信服务器**
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020101719080699.png#pic_center)
 **提交审核**
@@ -78,6 +79,10 @@ https://admin.it120.cc/#/dashboard
 **发布上线**
 审核通过后，就可以将审核通过的版本提交上线，这样在微信中就可以搜索到该小程序了。
 
+
 项目参考：
 参考项目：https://github.com/EastWorld/wechat-app-mall
 “天使童装8.X版本”入门教程：https://www.it120.cc/help/ikfe2k.html
+
+
+
