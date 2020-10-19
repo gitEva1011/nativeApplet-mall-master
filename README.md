@@ -7,6 +7,7 @@
  - [接口 SDK](https://github.com/gooking/apifm-wxapi)
  -  [api工厂](https://admin.it120.cc/) 
  - [Vant](http://vant-contrib.gitee.io/vant-weapp/#/intro)
+ - [小程序富文本插件（html 渲染）](https://github.com/jin-yufeng/Parser)
 
 **已完成功能：**
 

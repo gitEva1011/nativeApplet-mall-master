@@ -7,26 +7,54 @@ Page({
     searchValue: '',
     banners: null,
     goodsCategory: null,
-    goodsList: null
+    goodsList: [],
+    curPage: 1,
+    pageSize: 20,
+    isShowNoData: false
   },
+    /**
+   * 组件的生命周期
+   */
   onLoad: function() {
-    this.initBanners()
-    this.initCategory()
-    this.getGoodsList()
+    var _this = this
+    _this.initBanners()
+    _this.initCategory()
+    _this.getGoodsList()
+  },
+  onReachBottom: function() {
+    var _this = this
+    _this.setData({
+      curPage: _this.data.curPage + 1
+    })
+    _this.getGoodsList()
   },
   /**
    * 组件的方法列表
    */
+  toDetails(e){
+    wx.navigateTo({
+      url: '/pages/goods-details/index?id=' + e.currentTarget.dataset.id,
+    })
+  },
   async getGoodsList(){
     let _data = []
-    const res = await WXAPI.goods()
-    console.log(res)
+    wx.showLoading()
+    const res = await WXAPI.goods({
+      page: this.data.curPage,
+      pageSize: this.data.pageSize
+    })
+    wx.hideLoading()
     if (res.code == 0) {
-      _data = res.data
+      _data =  this.data.goodsList.concat(res.data)
       this.setData({
         goodsList: _data
       })
     } 
+    if(res.code === 700){
+      this.setData({
+        isShowNoData: true
+      })
+    }
   },
   tapBanner(e){
     let url = e.currentTarget.dataset.url

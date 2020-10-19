@@ -8,7 +8,8 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "",
     "navigationBarTextStyle": "black",
-    "onReachBottomDistance": 50
+    "onReachBottomDistance": 50,
+    "backgroundColor": "#f7f7f7"
   },
   "tabBar": {
     "color": "#6e6d6b",
@@ -31,7 +32,16 @@
     ]
   },
   "usingComponents": {
-    "van-search": "@vant/weapp/search/index"
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-card": "@vant/weapp/card/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-stepper": "@vant/weapp/stepper/index"
   },
   "sitemapLocation": "sitemap.json"
 }

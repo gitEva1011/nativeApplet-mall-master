@@ -65,6 +65,9 @@
 .f16{font-size:16rpx;}
 .f18{font-size:18rpx;}
 .f24{font-size:24rpx;}
+.f24{font-size:30rpx;}
+.f34{font-size:34rpx;}
+.f40{font-size:40rpx;}
 .fb{font-weight:bold}
 .fn{font-weight:normal;}
 .t2{text-indent:2em;}
@@ -72,6 +75,7 @@
 .lh180{line-height:180%;}
 .lh200{line-height:200%;}
 .no_dct{text-decoration:none;}
+.lit_dct{text-decoration: line-through;}
 .fes{text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 /* 界面背景颜色 */
 .theme_background{background-color: #f7f7f7;}
@@ -102,6 +106,9 @@
 .zoom{zoom:1;}
 .hidden{visiility:hidden;}
 .none{display:none;}
+.fx{display: flex;}
+.fx_c{align-items: center;justify-content: center;}
+.fx_btw{align-items: center;justify-content: space-between;}
 .oh{verflow: hidden;}
 .cursor{cursor: pointer;}
 

@@ -5,7 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "@vant/weapp": "^1.5.2",
-    "apifm-wxapi": "^3.18.0"
+    "apifm-wxapi": "^3.18.0",
+    "parser-wx": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {

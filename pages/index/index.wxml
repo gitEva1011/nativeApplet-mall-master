@@ -1,4 +1,4 @@
-<van-search value="{{ searchValue }}" placeholder="搜索当当商品" bind:search="onSearch" />
+<van-search value="{{ searchValue }}" placeholder="搜索商品" bind:search="onSearch" />
 <swiper class="wp93 mauto" indicator-dots="true"
   autoplay="true" interval="5000" duration="500">
   <block wx:for="{{banners}}" wx:key="id">
@@ -17,10 +17,10 @@
     />
   </block>
 </van-grid>
-<van-divider contentPosition="center">商品列表</van-divider>
+<van-divider class="wp93 mauto" contentPosition="center">商品列表</van-divider>
 <van-grid class="theme_background" column-num="2" border="{{ false }}">
   <block wx:for="{{goodsList}}">
-    <van-grid-item class="theme_background" use-slot>
+    <van-grid-item class="theme_background" link-type="navigateTo" bind:click="toDetails" data-id="{{item.id}}" use-slot>
       <view>
         <image
         class="w339 h339"
@@ -32,5 +32,7 @@
     </van-grid-item>
   </block>
 </van-grid>
+<van-divider wx:if="isShowNoData" class="wp93 mauto" contentPosition="center">没有更多啦</van-divider>
+
 
 
