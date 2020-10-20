@@ -20,16 +20,17 @@
   </view>
 </view>
 <!-- 商品介绍 -->
-<view class="m30 tc">商品详情</view>
+<!-- <view class="m30 tc">商品详情</view> -->
+<van-divider class="wp93 mauto" contentPosition="center">商品详情</van-divider>
 <parser html="{{goodDetails.content}}" />
 <van-goods-action>
   <van-goods-action-icon icon="home-o" text="首页" />
   <van-goods-action-icon icon="chat-o" text="客服" dot />
   <van-goods-action-icon icon="cart-o" text="购物车" info="5" />
-  <van-goods-action-button size="small" text="加入购物车" type="warning" />
-  <van-goods-action-button bindtap="showDialog" size="small" text="立即购买" />
+  <van-goods-action-button size="small" text="加入购物车" type="warning" data-type="1" bindtap="isShowInfoHandle" />
+  <van-goods-action-button bindtap="showDialog" size="small" text="立即购买" data-type="0" bindtap="isShowInfoHandle" />
 </van-goods-action>
-<!-- <van-cell-group>
+<van-cell-group class="pf goodInfoBox wp100" wx:if="{{ isShowInfo }}">
   <van-card
     num="1"
     price="{{goodDetails.basicInfo.minPrice}}"
@@ -38,6 +39,9 @@
     thumb="{{ goodDetails.basicInfo.pic }}"
   />
   <van-cell title="购买数量">
-    <van-stepper value="{{ 1 }}" bind:change="onStepperChange" />
+    <van-stepper value="{{ buyNum }}" bind:change="onStepperChange" />
   </van-cell>
-</van-cell-group> -->
+  <van-button type="danger" block wx:if="{{ buyType == 1 }}">加入购物车</van-button>
+  <van-button type="danger" block wx:if="{{ buyType == 0 }}" data-price="{{goodDetails.basicInfo.minPrice}}" data-name="{{goodDetails.basicInfo.name}}" data-pic="{{goodDetails.basicInfo.pic}}" bindtap="buyNow">立即购买</van-button>
+</van-cell-group>
+<view class="mask pf wp100 hp80" wx:if="{{ isShowInfo }}" bindtap="closeInfo"></view>

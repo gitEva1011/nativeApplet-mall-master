@@ -13,6 +13,9 @@
 
  - 框架搭建
  - 登录
+ - 首页
+ - 详情
+ - 提交订单
 
 ## 项目实现
 
@@ -69,7 +72,10 @@ https://admin.it120.cc/#/dashboard
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201017190415581.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ0NDU1MTc=,size_16,color_FFFFFF,t_70#pic_center)
 
-
+**项目预览**
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20201020182109356.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ0NDU1MTc=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20201020182138359.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ0NDU1MTc=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20201020182208573.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ0NDU1MTc=,size_16,color_FFFFFF,t_70#pic_center)
 
 ## 上线小程序
 

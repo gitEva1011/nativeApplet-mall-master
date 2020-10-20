@@ -1,2 +1,52 @@
-<!--pages/my/index.wxml-->
-<text>pages/my/index.wxml</text>
+<!-- <view wx:if="{{apiUserInfoMap}}" class="header-box">
+  <image class="avatar" src="{{ apiUserInfoMap.base.avatarUrl }}" mode="aspectFill"></image>
+	<view class="r">
+    <view class="uid">用户ID: {{ apiUserInfoMap.base.id }}</view>
+    <view class="nick">{{ apiUserInfoMap.base.nick }}</view>
+  </view>
+</view>
+<view wx:else class="header-box">
+  <image class="avatar" src="/images/nologin2.png"></image> 
+	<van-button plain custom-class="btn" size="small" open-type="getUserInfo" bind:getuserinfo="processLogin">立即登录</van-button>
+</view>
+<navigator url="/pages/order-list/index">
+    <view class="menu-item">
+      <view class="l">我的订单</view>
+      <image class="next" src="/images/icon/next.png"></image>
+    </view>
+  </navigator>
+  <view class='order-shortcut'>
+    <view class='item' bindtap='goOrder' data-type="0">
+      <view wx:if="{{count_id_no_pay !== 0}}" class='dot'>{{count_id_no_pay}}</view>
+      <image class="icon" src="/images/order/topay.png" background-size="cover"></image>
+      <view class='text'>待付款</view>
+    </view>
+    <view class='item' bindtap='goOrder' data-type="1">
+      <view wx:if="{{count_id_no_transfer !== 0}}" class='dot'>{{count_id_no_transfer}}</view>
+      <image class="icon" src="/images/order/fahuo.png" background-size="cover"></image>
+      <view class='text'>待发货</view>
+    </view>
+    <view class='item' bindtap='goOrder' data-type="2">
+      <view wx:if="{{count_id_no_confirm !== 0}}" class='dot'>{{count_id_no_confirm}}</view>
+      <image class="icon" src="/images/order/shouhuo.png" background-size="cover"></image>
+      <view class='text'>待收货</view>
+    </view>
+    <view class='item' bindtap='goOrder' data-type="3">
+      <view wx:if="{{count_id_no_reputation !== 0}}" class='dot'>{{count_id_no_reputation}}</view>
+      <image class="icon" src="/images/order/pj.png" background-size="cover"></image>
+      <view class='text'>待评价</view>
+    </view>
+    <view class='item' bindtap='goOrder' data-type="99">
+      <image class="icon" src="/images/order/shouhou.png" background-size="cover"></image>
+      <view class='text'>售后</view>
+    </view>
+  </view>
+  <navigator url="/pages/select-address/index">
+    <view class="menu-item">
+      <view class="l">收货地址</view>
+      <image class="next" src="/images/icon/next.png"></image>
+    </view>
+  </navigator>
+<van-cell wx:if="{{apiUserInfoMap}}" title="退出登录" is-link bind:click="loginOut" />
+<van-cell wx:else title="立即登陆" is-link bind:click="goLogin" />
+<van-cell title="当前版本" value="{{version}}" /> -->

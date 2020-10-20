@@ -1,0 +1,40 @@
+<van-card
+    num="1"
+    price="{{goodDetails.price}}"
+    title="{{goodDetails.name}}"
+    thumb="{{ goodDetails.pic }}"
+  />
+<van-cell-group class="goodInfoBox">
+  <van-cell title="配送方式">
+    <van-radio-group class="fx fx_c f24" value="{{ radio }}" bind:change="onChange">
+      <van-radio class="mr20" icon-size="15" name="1">快递</van-radio>
+      <van-radio icon-size="15" name="2">到店自取</van-radio>
+    </van-radio-group>
+  </van-cell>
+  <van-cell
+    class="theme_red"
+    is-link
+    icon="add-o"
+    title="新增收货地址"
+    link-type="navigateTo"
+    url="/pages/dashboard/index"
+  />
+  <van-cell title="备注">
+    <van-field
+      value="{{ value }}"
+      placeholder="如需备注请输入"
+      border="{{ false }}"
+    />
+  </van-cell>
+  <van-cell title="商品小计" value="189" />
+  <van-cell title="运费" value="0" />
+</van-cell-group>
+<van-submit-bar
+  price="{{ 189 }}"
+  button-text="提交订单"
+  bind:submit="onClickButton"
+  tip="{{ true }}"
+>
+  <!-- <van-tag type="primary">标签</van-tag>
+  <view slot="tip">您的收货地址不支持同城送, <text>修改地址</text></view> -->
+</van-submit-bar>

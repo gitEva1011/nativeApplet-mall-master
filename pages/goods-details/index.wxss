@@ -1,1 +1,7 @@
-.van-goods-action{font-size:30rpx !important;}
+.goodInfoBox{left:0;bottom:0;z-index: 2;}
+.mask{opacity: 0.5;
+  background: #000;
+  z-index: 1;
+  left: 0;
+  top: 0;}
+  .van-button--normal {font-size: 24rpx !important;}

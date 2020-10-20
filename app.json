@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/goods-details/index",
+    "pages/to-by-order/index",
     "pages/my/index"
   ],
   "window": {
@@ -24,6 +26,12 @@
         "text": "首页"
       },
       {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabBar/cart-off.png",
+        "selectedIconPath": "images/tabBar/cart-on.png",
+        "text": "购物车"
+      },
+      {
         "pagePath": "pages/my/index",
         "iconPath": "images/tabBar/my-off.png",
         "selectedIconPath": "images/tabBar/my-on.png",
@@ -32,6 +40,7 @@
     ]
   },
   "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
     "van-cell": "@vant/weapp/cell/index",
     "van-cell-group": "@vant/weapp/cell-group/index",
     "van-search": "@vant/weapp/search/index",
