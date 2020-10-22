@@ -77,6 +77,8 @@
 .no_dct{text-decoration:none;}
 .lit_dct{text-decoration: line-through;}
 .fes{text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+
+.theme_color1{color: #EEEEEE;}
 /* 界面背景颜色 */
 .theme_background{background-color: #f7f7f7;}
 /* 界面边框颜色 */
@@ -91,6 +93,7 @@
 .input_border{color:#ddd;}
 /* 置灰 */
 .theme_gray{color:#c2c2c2;}
+.bp50{border-radius: 50%;}
 
 /*定位布局*/
 .tl{text-align:left;}

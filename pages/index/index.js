@@ -1,4 +1,5 @@
 const WXAPI = require('apifm-wxapi')
+const TOOLS = require('../../utils/tools.js')
 Page({
    /**
    * 组件的初始数据
@@ -20,6 +21,10 @@ Page({
     _this.initBanners()
     _this.initCategory()
     _this.getGoodsList()
+  },
+  onShow: function(){
+    // 获取购物车数据，显示TabBarBadge
+    TOOLS.showTabBarBadge()
   },
   onReachBottom: function() {
     var _this = this

@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/goods-details/index",
     "pages/to-by-order/index",
-    "pages/my/index"
+    "pages/my/index",
+    "pages/shop-cart/index",
+    "pages/order-list/index",
+    "pages/select-address/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -26,7 +29,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/shop-cart/index",
         "iconPath": "images/tabBar/cart-off.png",
         "selectedIconPath": "images/tabBar/cart-on.png",
         "text": "购物车"
